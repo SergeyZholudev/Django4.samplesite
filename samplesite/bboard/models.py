@@ -8,3 +8,5 @@ class Bb(models.Model):
     content = models.TextField()
     price = models.FloatField()
     published = models.DateTimeField(auto_now_add=True, db_index=True)
+
+    objects = models.Manager()
