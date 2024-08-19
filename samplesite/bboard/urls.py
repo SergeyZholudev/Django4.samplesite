@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index),
+    path('<int:rubric_id>/', views.rubric_bbs),
+    # path('', views.index),
 ]
