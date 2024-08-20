@@ -234,3 +234,6 @@ fabric.properties
 
 #PyCharm project
 .idea/
+
+#Django migrations
+migrations/

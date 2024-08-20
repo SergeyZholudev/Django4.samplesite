@@ -16,3 +16,10 @@ def rubric_bbs(request, rubric_id):
     context = {'bbs': bbs, 'rubrics': rubrics,
                'current_rubric': current_rubric}
     return render(request, 'bboard/rubric_bbs.html', context)
+ 
+
+def index(request):
+    bbs = Bb.objects.all()
+    rubrics = Rubric.objects.all()
+    context = {'bbs': bbs, 'rubrics': rubrics}
+    return render(request, 'bboard/index.html', context)
